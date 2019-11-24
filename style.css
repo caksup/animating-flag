@@ -1,0 +1,64 @@
+/*
+Created by Cak Sup
+On 17 November 2019
+Palembang, South Sumatera
+*/
+
+body{
+background-color: green;
+  }
+#csid{
+  background-color: #fff;
+ // height: 70px;
+  
+  border-bottom:  10px solid white;
+  border-top:  20px solid red;
+  
+  }
+#csid h1{
+  font-size: 40px;
+  text-align: center;
+  letter-spacing: 20px;
+  animation: ketok 10s ;
+  overflow: hidden;
+  margin-top: 0px;
+  font-weight: 600;
+  }
+#csid p{
+  text-align: center;
+  font-size: 20px;
+  color: red;
+  margin: 0;
+  animation: mlebu 10s;
+  padding-top: 0;
+  }
+@keyframes mlebu{
+from { transform: translateY(100%); color:transparent;} to { transform: translateY(0%); color:red;}
+}
+@keyframes ketok{
+  0%{width:0%;}
+  100%{width: 100%;}
+  }
+
+  hr{
+    width: 340px;
+    color: red;
+  background-color: red;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    }
+.a{
+  stroke-dasharray: 1700;
+  stroke-dashoffset: 0;
+  fill: none;
+  animation: dash 40s linear;
+  }
+@keyframes dash{
+  from{stroke-dashoffset: 1700;}
+  to{stroke-dashoffset: 0;}
+  0%{fill: none;}
+  50%{fill: ;}
+  0%{stroke: white}
+   50%{stroke: ;}
+  }
